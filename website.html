@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Geopron Travel Adventures | Tanzania Safaris, Kilimanjaro & Zanzibar</title>
+
+<meta name="description" content="Geopron Travel Adventures offers Kilimanjaro trekking, Tanzania wildlife safaris, Zanzibar beach holidays, cultural tours and unforgettable African adventures. Based in Moshi, Tanzania.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#1d2939;
+    background:#ffffff;
+    line-height:1.6;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(0,0,0,0.88);
+    padding:15px 6%;
+}
+
+.nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#fff;
+    font-size:23px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#f5b942;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:22px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#f5b942;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.52),rgba(0,0,0,.52)),
+    url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2000&q=85")
+    center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:120px 20px 70px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:clamp(42px,7vw,76px);
+    line-height:1.05;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:21px;
+    max-width:750px;
+    margin:0 auto 30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    margin:7px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#f5b942;
+    color:#111;
+}
+
+.btn-primary:hover{
+    background:#fff;
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:#111;
+}
+
+section{
+    padding:80px 6%;
+}
+
+.section-title{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 45px;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin-bottom:12px;
+    color:#172b1f;
+}
+
+.section-title p{
+    color:#667085;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 30px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+}
+
+.card-img{
+    height:210px;
+    width:100%;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:23px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+    color:#173b2a;
+    font-size:22px;
+}
+
+.card-content p{
+    color:#667085;
+    margin-bottom:17px;
+}
+
+.small-btn{
+    color:#b47700;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.about{
+    background:#f5f7f4;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:18px;
+}
+
+.about h2{
+    font-size:40px;
+    color:#173b2a;
+    margin-bottom:18px;
+}
+
+.check{
+    margin:14px 0;
+    font-weight:600;
+}
+
+.check span{
+    color:#d69b20;
+    margin-right:10px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.feature{
+    text-align:center;
+    padding:30px 20px;
+    border-radius:15px;
+    background:#f8faf8;
+}
+
+.feature .icon{
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.feature h3{
+    margin-bottom:8px;
+}
+
+.booking{
+    background:
+    linear-gradient(rgba(12,35,24,.88),rgba(12,35,24,.88)),
+    url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+    color:white;
+}
+
+.booking-box{
+    max-width:850px;
+    margin:auto;
+    background:white;
+    color:#222;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 15px 50px rgba(0,0,0,.3);
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #d0d5dd;
+    border-radius:8px;
+    font-size:15px;
+    margin-top:7px;
+}
+
+textarea{
+    min-height:130px;
+    resize:vertical;
+}
+
+.form-full{
+    grid-column:1/-1;
+}
+
+label{
+    font-weight:bold;
+}
+
+.submit{
+    width:100%;
+    border:none;
+    cursor:pointer;
+    background:#16803c;
+    color:white;
+    padding:15px;
+    border-radius:8px;
+    font-size:17px;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+.submit:hover{
+    background:#0d642d;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.contact-item{
+    padding:28px;
+    border-radius:15px;
+    background:#f5f7f4;
+}
+
+.contact-item h3{
+    margin-bottom:8px;
+}
+
+.contact-item a{
+    color:#16803c;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    background:#10251a;
+    color:white;
+    padding:45px 6%;
+    text-align:center;
+}
+
+footer .logo{
+    margin-bottom:12px;
+}
+
+.footer-links{
+    margin:20px 0;
+}
+
+.footer-links a{
+    color:#ddd;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    text-decoration:none;
+    z-index:2000;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+}
+
+@media(max-width:800px){
+    nav{
+        display:none;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-full{
+        grid-column:auto;
+    }
+
+    section{
+        padding:65px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="nav">
+<div class="logo">GEOPRON <span>TRAVEL ADVENTURES</span></div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#experiences">Tours</a>
+<a href="#about">About</a>
+<a href="#booking">Book</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+
+<h1>Discover Tanzania.<br>Experience Africa.</h1>
+
+<p>
+Explore Kilimanjaro, witness the incredible wildlife of Tanzania,
+experience authentic culture and relax on the beautiful beaches of Zanzibar.
+</p>
+
+<a class="btn btn-primary" href="#booking">Plan Your Adventure</a>
+
+<a class="btn btn-outline"
+href="https://wa.me/255678609977?text=Hello%20Geopron%20Travel%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip%20to%20Tanzania.">
+WhatsApp Us
+</a>
+
+</div>
+</section>
+
+
+<section id="experiences">
+
+<div class="section-title">
+<h2>Experience Tanzania With Us</h2>
+<p>
+From the roof of Africa to the plains of the Serengeti and the beaches of Zanzibar,
+we create memorable journeys across Tanzania.
+</p>
+</div>
+
+<div class="container cards">
+
+<div class="card">
+<img class="card-img"
+src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>🏔️ Kilimanjaro Trekking</h3>
+<p>
+Challenge yourself on Mount Kilimanjaro with professional local guides,
+experienced mountain crews and carefully planned routes.
+</p>
+<a class="small-btn" href="#booking">Plan Kilimanjaro →</a>
+</div>
+</div>
+
+
+<div class="card">
+<img class="card-img"
+src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>🦁 Wildlife Safaris</h3>
+<p>
+Discover Tanzania's iconic national parks including Serengeti,
+Ngorongoro, Tarangire and Lake Manyara.
+</p>
+<a class="small-btn" href="#booking">Plan Safari →</a>
+</div>
+</div>
+
+
+<div class="card">
+<img class="card-img"
+src="https://images.unsplash.com/photo-1590523741831-ab7e8b8d7f65?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>🏝️ Zanzibar</h3>
+<p>
+Combine your adventure with tropical beaches, island experiences,
+Stone Town and the unique culture of Zanzibar.
+</p>
+<a class="small-btn" href="#booking">Plan Zanzibar →</a>
+</div>
+</div>
+
+
+<div class="card">
+<img class="card-img"
+src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>☕ Cultural Experiences</h3>
+<p>
+Meet local communities, discover Chagga traditions, visit coffee farms
+and experience authentic Tanzanian culture.
+</p>
+<a class="small-btn" href="#booking">Explore Culture →</a>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<section class="about" id="about">
+
+<div class="container about-grid">
+
+<div>
+<img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85">
+</div>
+
+<div>
+<h2>Your Tanzania. Your Story.</h2>
+
+<p>
+Geopron Travel Adventures is a Tanzania-based tour company offering
+authentic African experiences from the mountains of Kilimanjaro to the
+wildlife-rich national parks and the tropical islands of Zanzibar.
+</p>
+
+<p style="margin-top:15px;">
+We create personalized trips for travelers looking for adventure,
+wildlife, culture, relaxation and unforgettable memories.
+</p>
+
+<div class="check"><span>✓</span> Local Tanzanian experience</div>
+<div class="check"><span>✓</span> Personalized itineraries</div>
+<div class="check"><span>✓</span> Professional guides and trusted partners</div>
+<div class="check"><span>✓</span> Mountain, safari, culture & beach experiences</div>
+
+<a class="btn btn-primary" href="#booking">Start Planning</a>
+
+</div>
+</div>
+</section>
+
+
+<section>
+
+<div class="section-title">
+<h2>Why Travel With Geopron?</h2>
+<p>We focus on creating experiences that feel personal, authentic and memorable.</p>
+</div>
+
+<div class="container features">
+
+<div class="feature">
+<div class="icon">🇹🇿</div>
+<h3>Local Knowledge</h3>
+<p>Experience Tanzania through local expertise and genuine connections.</p>
+</div>
+
+<div class="feature">
+<div class="icon">🧭</div>
+<h3>Tailor-Made Trips</h3>
+<p>Your journey can be designed around your interests, time and budget.</p>
+</div>
+
+<div class="feature">
+<div class="icon">🏕️</div>
+<h3>Adventure</h3>
+<p>From mountains and wildlife to culture and beaches, Tanzania is yours to explore.</p>
+</div>
+
+<div class="feature">
+<div class="icon">🤝</div>
+<h3>Personal Service</h3>
+<p>We stay connected with you from planning until the end of your journey.</p>
+</div>
+
+</div>
+</section>
+
+
+<section class="booking" id="booking">
+
+<div class="section-title">
+<h2 style="color:white;">Plan Your Tanzania Adventure</h2>
+<p style="color:#ddd;">
+Tell us what you are dreaming about and we will help you create your journey.
+</p>
+</div>
+
+<div class="booking-box">
+
+<form onsubmit="sendBooking(event)">
+
+<div class="form-grid">
+
+<div>
+<label>Full Name *</label>
+<input id="name" type="text" placeholder="Your name" required>
+</div>
+
+<div>
+<label>Email *</label>
+<input id="email" type="email" placeholder="your@email.com" required>
+</div>
+
+<div>
+<label>WhatsApp / Phone</label>
+<input id="phone" type="tel" placeholder="+1...">
+</div>
+
+<div>
+<label>Number of Travelers</label>
+<input id="travelers" type="number" min="1" placeholder="2">
+</div>
+
+<div>
+<label>Travel Date</label>
+<input id="date" type="date">
+</div>
+
+<div>
+<label>Experience</label>
+<select id="experience">
+<option>Kilimanjaro Trekking</option>
+<option>Wildlife Safari</option>
+<option>Zanzibar Beach Holiday</option>
+<option>Cultural Tour</option>
+<option>Day Trip</option>
+<option>Safari + Zanzibar</option>
+<option>Kilimanjaro + Safari</option>
+<option>Custom Tanzania Adventure</option>
+</select>
+</div>
+
+<div class="form-full">
+<label>Tell us about your trip</label>
+<textarea id="message" placeholder="Routes, parks, number of days, accommodation preference, budget or anything else you would like us to know..."></textarea>
+</div>
+
+</div>
+
+<button class="submit" type="submit">
+Send Booking Request via WhatsApp
+</button>
+
+</form>
+
+</div>
+</section>
+
+
+<section id="contact" class="contact">
+
+<div class="section-title">
+<h2>Let's Start Planning</h2>
+<p>Contact Geopron Travel Adventures from anywhere in the world.</p>
+</div>
+
+<div class="container contact-grid">
+
+<div class="contact-item">
+<h3>📱 WhatsApp</h3>
+<a href="https://wa.me/255678609977">+255 678 609 977</a>
+</div>
+
+<div class="contact-item">
+<h3>📧 Email</h3>
+<a href="mailto:geoprontravel@gmail.com">
+geoprontravel@gmail.com
+</a>
+</div>
+
+<div class="contact-item">
+<h3>📍 Location</h3>
+<p>Moshi, Tanzania</p>
+</div>
+
+<div class="contact-item">
+<h3>🌍 Destination</h3>
+<p>Tanzania & Zanzibar</p>
+</div>
+
+</div>
+</section>
+
+
+<footer>
+
+<div class="logo">GEOPRON <span>TRAVEL ADVENTURES</span></div>
+
+<p>
+Discover Tanzania. Experience Africa. Create Memories for a Lifetime.
+</p>
+
+<div class="footer-links">
+<a href="#home">Home</a>
+<a href="#experiences">Tours</a>
+<a href="#about">About</a>
+<a href="#booking">Book</a>
+<a href="#contact">Contact</a>
+</div>
+
+<p>© 2026 Geopron Travel Adventures. All Rights Reserved.</p>
+
+</footer>
+
+
+<a class="whatsapp"
+href="https://wa.me/255678609977?text=Hello%20Geopron%20Travel%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip%20to%20Tanzania."
+target="_blank">
+💬
+</a>
+
+
+<script>
+
+function sendBooking(event){
+
+event.preventDefault();
+
+const name = document.getElementById("name").value;
+const email = document.getElementById("email").value;
+const phone = document.getElementById("phone").value;
+const travelers = document.getElementById("travelers").value;
+const date = document.getElementById("date").value;
+const experience = document.getElementById("experience").value;
+const message = document.getElementById("message").value;
+
+const text =
+"Hello Geopron Travel Adventures!%0A%0A" +
+"I would like to plan a Tanzania adventure.%0A%0A" +
+"Name: " + encodeURIComponent(name) + "%0A" +
+"Email: " + encodeURIComponent(email) + "%0A" +
+"Phone/WhatsApp: " + encodeURIComponent(phone) + "%0A" +
+"Travelers: " + encodeURIComponent(travelers) + "%0A" +
+"Travel Date: " + encodeURIComponent(date) + "%0A" +
+"Experience: " + encodeURIComponent(experience) + "%0A" +
+"Trip Details: " + encodeURIComponent(message);
+
+window.open("https://wa.me/255678609977?text=" + text, "_blank");
+
+}
+
+</script>
+
+</body>
+</html>
