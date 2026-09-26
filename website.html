@@ -6,7 +6,7 @@
 
 <title>Geopron Travel Adventures | Tanzania Safaris, Kilimanjaro & Zanzibar</title>
 
-<meta name="description" content="Geopron Travel Adventures offers Kilimanjaro trekking, Tanzania wildlife safaris, Zanzibar beach holidays, cultural tours and unforgettable African adventures. Based in Moshi, Tanzania.">
+<meta name="description" content="Geopron Travel Adventures offers Kilimanjaro trekking, Tanzania wildlife safaris, Zanzibar beach holidays, cultural tours and unforgettable African adventures.">
 
 <style>
 *{
@@ -17,9 +17,9 @@
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     color:#1d2939;
-    background:#ffffff;
+    background:#fff;
     line-height:1.6;
 }
 
@@ -28,7 +28,7 @@ header{
     top:0;
     width:100%;
     z-index:1000;
-    background:rgba(0,0,0,0.88);
+    background:rgba(0,0,0,.90);
     padding:15px 6%;
 }
 
@@ -42,7 +42,7 @@ header{
 
 .logo{
     color:#fff;
-    font-size:23px;
+    font-size:22px;
     font-weight:bold;
 }
 
@@ -51,9 +51,9 @@ header{
 }
 
 nav a{
-    color:white;
+    color:#fff;
     text-decoration:none;
-    margin-left:22px;
+    margin-left:20px;
     font-weight:600;
 }
 
@@ -64,7 +64,7 @@ nav a:hover{
 .hero{
     min-height:100vh;
     background:
-    linear-gradient(rgba(0,0,0,.52),rgba(0,0,0,.52)),
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
     url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2000&q=85")
     center/cover;
     display:flex;
@@ -86,8 +86,8 @@ nav a:hover{
 }
 
 .hero p{
-    font-size:21px;
-    max-width:750px;
+    font-size:20px;
+    max-width:760px;
     margin:0 auto 30px;
 }
 
@@ -111,12 +111,12 @@ nav a:hover{
 }
 
 .btn-outline{
-    border:2px solid white;
-    color:white;
+    border:2px solid #fff;
+    color:#fff;
 }
 
 .btn-outline:hover{
-    background:white;
+    background:#fff;
     color:#111;
 }
 
@@ -124,43 +124,50 @@ section{
     padding:80px 6%;
 }
 
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
 .section-title{
     text-align:center;
-    max-width:800px;
+    max-width:850px;
     margin:0 auto 45px;
 }
 
 .section-title h2{
     font-size:38px;
     margin-bottom:12px;
-    color:#172b1f;
+    color:#173b2a;
 }
 
 .section-title p{
     color:#667085;
 }
 
-.container{
-    max-width:1200px;
-    margin:auto;
+.category-title{
+    text-align:center;
+    color:#173b2a;
+    font-size:30px;
+    margin:15px 0 30px;
 }
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
     gap:25px;
 }
 
 .card{
-    background:white;
-    border-radius:15px;
+    background:#fff;
+    border-radius:16px;
     overflow:hidden;
     box-shadow:0 8px 30px rgba(0,0,0,.10);
     transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-7px);
+    transform:translateY(-6px);
 }
 
 .card-img{
@@ -174,20 +181,66 @@ section{
 }
 
 .card-content h3{
-    margin-bottom:10px;
     color:#173b2a;
     font-size:22px;
+    margin-bottom:8px;
 }
 
 .card-content p{
     color:#667085;
-    margin-bottom:17px;
+    margin-bottom:14px;
 }
 
-.small-btn{
-    color:#b47700;
+.days{
+    display:inline-block;
+    background:#eef6ef;
+    color:#16803c;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:13px;
     font-weight:bold;
+    margin-bottom:12px;
+}
+
+.details{
+    margin-top:15px;
+    border-top:1px solid #eee;
+    padding-top:15px;
+}
+
+details summary{
+    cursor:pointer;
+    color:#16803c;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.details h4{
+    color:#173b2a;
+    margin:18px 0 7px;
+}
+
+.details ul{
+    padding-left:20px;
+}
+
+.details li{
+    margin-bottom:6px;
+}
+
+.enquire{
+    display:inline-block;
+    margin-top:18px;
+    background:#16803c;
+    color:#fff;
+    padding:11px 18px;
+    border-radius:25px;
     text-decoration:none;
+    font-weight:bold;
+}
+
+.enquire:hover{
+    background:#0d642d;
 }
 
 .about{
@@ -255,11 +308,10 @@ section{
 .booking-box{
     max-width:850px;
     margin:auto;
-    background:white;
+    background:#fff;
     color:#222;
     padding:35px;
     border-radius:18px;
-    box-shadow:0 15px 50px rgba(0,0,0,.3);
 }
 
 .form-grid{
@@ -268,7 +320,7 @@ section{
     gap:18px;
 }
 
-input, select, textarea{
+input,select,textarea{
     width:100%;
     padding:14px;
     border:1px solid #d0d5dd;
@@ -279,7 +331,6 @@ input, select, textarea{
 
 textarea{
     min-height:130px;
-    resize:vertical;
 }
 
 .form-full{
@@ -295,16 +346,12 @@ label{
     border:none;
     cursor:pointer;
     background:#16803c;
-    color:white;
+    color:#fff;
     padding:15px;
     border-radius:8px;
     font-size:17px;
     font-weight:bold;
     margin-top:20px;
-}
-
-.submit:hover{
-    background:#0d642d;
 }
 
 .contact{
@@ -323,10 +370,6 @@ label{
     background:#f5f7f4;
 }
 
-.contact-item h3{
-    margin-bottom:8px;
-}
-
 .contact-item a{
     color:#16803c;
     text-decoration:none;
@@ -335,13 +378,9 @@ label{
 
 footer{
     background:#10251a;
-    color:white;
+    color:#fff;
     padding:45px 6%;
     text-align:center;
-}
-
-footer .logo{
-    margin-bottom:12px;
 }
 
 .footer-links{
@@ -362,7 +401,7 @@ footer .logo{
     height:58px;
     border-radius:50%;
     background:#25D366;
-    color:white;
+    color:#fff;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -400,32 +439,41 @@ footer .logo{
 
 <header>
 <div class="nav">
-<div class="logo">GEOPRON <span>TRAVEL ADVENTURES</span></div>
+
+<div class="logo">
+GEOPRON <span>TRAVEL ADVENTURES</span>
+</div>
 
 <nav>
 <a href="#home">Home</a>
-<a href="#experiences">Tours</a>
+<a href="#tours">Tours</a>
 <a href="#about">About</a>
 <a href="#booking">Book</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </div>
 </header>
 
+
 <section class="hero" id="home">
+
 <div class="hero-content">
 
 <h1>Discover Tanzania.<br>Experience Africa.</h1>
 
 <p>
-Explore Kilimanjaro, witness the incredible wildlife of Tanzania,
-experience authentic culture and relax on the beautiful beaches of Zanzibar.
+Explore Mount Kilimanjaro, discover Tanzania's incredible wildlife,
+experience authentic local culture and relax on the beautiful beaches of Zanzibar.
 </p>
 
-<a class="btn btn-primary" href="#booking">Plan Your Adventure</a>
+<a class="btn btn-primary" href="#tours">
+Explore Our Tours
+</a>
 
 <a class="btn btn-outline"
-href="https://wa.me/255678609977?text=Hello%20Geopron%20Travel%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip%20to%20Tanzania.">
+href="https://wa.me/255678609977?text=Hello%20Geopron%20Travel%20Adventures%2C%20I%20would%20like%20to%20plan%20a%20trip%20to%20Tanzania."
+target="_blank">
 WhatsApp Us
 </a>
 
@@ -433,73 +481,831 @@ WhatsApp Us
 </section>
 
 
-<section id="experiences">
+<section id="tours">
 
 <div class="section-title">
-<h2>Experience Tanzania With Us</h2>
+
+<h2>Our Tanzania Tours</h2>
+
 <p>
-From the roof of Africa to the plains of the Serengeti and the beaches of Zanzibar,
-we create memorable journeys across Tanzania.
+Discover Tanzania through carefully planned mountain adventures,
+wildlife safaris, cultural experiences, beach holidays and tailor-made journeys.
 </p>
+
 </div>
 
-<div class="container cards">
+
+<div class="container">
+
+<h3 class="category-title">🏔️ Kilimanjaro Trekking</h3>
+
+<div class="cards">
+
+
+<!-- MARANGU -->
 
 <div class="card">
+
 <img class="card-img"
-src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80">
+src="https://images.unsplash.com/photo-1527489377706-5bf97e608852?auto=format&fit=crop&w=1000&q=85">
+
 <div class="card-content">
-<h3>🏔️ Kilimanjaro Trekking</h3>
+
+<span class="days">6 DAYS</span>
+
+<h3>Marangu Route – 6 Days</h3>
+
 <p>
-Challenge yourself on Mount Kilimanjaro with professional local guides,
-experienced mountain crews and carefully planned routes.
+A classic Kilimanjaro adventure through rainforest, moorland and alpine landscapes,
+finishing with the unforgettable summit experience at Uhuru Peak.
 </p>
-<a class="small-btn" href="#booking">Plan Kilimanjaro →</a>
+
+<div class="details">
+
+<details>
+
+<summary>View Full Itinerary & Details</summary>
+
+<h4>Overview</h4>
+
+<p>
+The Marangu Route is one of the most established routes on Mount Kilimanjaro.
+It is known for its mountain hut accommodation and beautiful changing landscapes.
+This itinerary allows time for acclimatization before the summit attempt.
+</p>
+
+<h4>Highlights</h4>
+
+<ul>
+<li>Marangu Gate</li>
+<li>Beautiful rainforest</li>
+<li>Mandara and Horombo Huts</li>
+<li>Kibo alpine desert</li>
+<li>Uhuru Peak – Roof of Africa</li>
+<li>Sunrise from the summit area</li>
+</ul>
+
+<h4>Day 1 – Marangu Gate to Mandara Hut</h4>
+<p>
+Transfer to Marangu Gate for registration and begin the trek through lush rainforest
+to Mandara Hut.
+</p>
+
+<h4>Day 2 – Mandara Hut to Horombo Hut</h4>
+<p>
+Continue through the forest and into the moorland zone with views of Kibo and Mawenzi.
+Overnight at Horombo Hut.
+</p>
+
+<h4>Day 3 – Horombo Hut to Kibo Hut</h4>
+<p>
+Trek across the alpine desert toward Kibo. The landscape becomes increasingly dry
+as you approach the summit zone.
+</p>
+
+<h4>Day 4 – Kibo Hut to Uhuru Peak to Horombo Hut</h4>
+<p>
+Begin the summit attempt during the night. Reach Uhuru Peak, the highest point in
+Africa, then descend to Horombo Hut.
+</p>
+
+<h4>Day 5 – Horombo Hut to Mandara Hut</h4>
+<p>
+Descend through the moorland and rainforest to Mandara Hut.
+</p>
+
+<h4>Day 6 – Mandara Hut to Marangu Gate</h4>
+<p>
+Complete the descent through the rainforest and return to Marangu Gate.
+Transfer back to Moshi.
+</p>
+
+<h4>What's Included</h4>
+<ul>
+<li>Professional mountain guide</li>
+<li>Mountain crew support</li>
+<li>Park and conservation fees</li>
+<li>Mountain accommodation</li>
+<li>Meals during the trek</li>
+<li>Emergency oxygen</li>
+<li>Rescue arrangements</li>
+<li>Transfers as specified in the itinerary</li>
+</ul>
+
+<h4>What's Not Included</h4>
+<ul>
+<li>International flights</li>
+<li>Tanzania visa</li>
+<li>Travel insurance</li>
+<li>Personal hiking equipment</li>
+<li>Tips for mountain crew</li>
+<li>Personal expenses</li>
+</ul>
+
+<a class="enquire"
+href="https://wa.me/255678609977?text=Hello%20Geopron%2C%20I%20am%20interested%20in%20the%206-Day%20Marangu%20Route."
+target="_blank">
+Enquire About This Trek
+</a>
+
+</details>
+
+</div>
 </div>
 </div>
 
+
+<!-- MACHAME 7 -->
 
 <div class="card">
+
 <img class="card-img"
-src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=80">
+src="https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=1000&q=85">
+
 <div class="card-content">
-<h3>🦁 Wildlife Safaris</h3>
+
+<span class="days">7 DAYS</span>
+
+<h3>Machame Route – 7 Days</h3>
+
 <p>
-Discover Tanzania's iconic national parks including Serengeti,
-Ngorongoro, Tarangire and Lake Manyara.
+A scenic and rewarding route offering varied landscapes, excellent acclimatization
+and an unforgettable summit experience.
 </p>
-<a class="small-btn" href="#booking">Plan Safari →</a>
+
+<div class="details">
+
+<details>
+
+<summary>View Full Itinerary & Details</summary>
+
+<h4>Overview</h4>
+
+<p>
+The Machame Route is famous for its dramatic scenery and varied terrain.
+The seven-day itinerary provides additional time for acclimatization and a gradual
+approach to the summit.
+</p>
+
+<h4>Highlights</h4>
+
+<ul>
+<li>Machame rainforest</li>
+<li>Shira Plateau</li>
+<li>Lava Tower</li>
+<li>Barranco Wall</li>
+<li>Karanga Valley</li>
+<li>Uhuru Peak</li>
+</ul>
+
+<h4>Day 1 – Machame Gate to Machame Camp</h4>
+<p>
+Registration at Machame Gate followed by a trek through the rainforest to Machame Camp.
+</p>
+
+<h4>Day 2 – Machame Camp to Shira Camp</h4>
+<p>
+Leave the rainforest and climb toward the Shira Plateau with spectacular mountain views.
+</p>
+
+<h4>Day 3 – Shira Camp to Lava Tower to Barranco Camp</h4>
+<p>
+Trek toward Lava Tower for acclimatization before descending into the Barranco Valley.
+</p>
+
+<h4>Day 4 – Barranco Camp to Karanga Camp</h4>
+<p>
+Climb the famous Barranco Wall and continue through the alpine landscape to Karanga.
+</p>
+
+<h4>Day 5 – Karanga Camp to Barafu Camp</h4>
+<p>
+Continue toward Barafu Camp, the base for the summit attempt.
+</p>
+
+<h4>Day 6 – Barafu Camp to Uhuru Peak to Mweka Camp</h4>
+<p>
+Begin the summit attempt during the night, reach Uhuru Peak and descend toward Mweka Camp.
+</p>
+
+<h4>Day 7 – Mweka Camp to Mweka Gate</h4>
+<p>
+Complete the descent through the rainforest and transfer back to Moshi.
+</p>
+
+<h4>What's Included</h4>
+<ul>
+<li>Professional mountain guide</li>
+<li>Mountain crew</li>
+<li>Park fees</li>
+<li>Camping accommodation</li>
+<li>Meals during the trek</li>
+<li>Emergency oxygen</li>
+<li>Rescue arrangements</li>
+<li>Airport or hotel transfers where included</li>
+</ul>
+
+<h4>What's Not Included</h4>
+<ul>
+<li>International flights</li>
+<li>Visa</li>
+<li>Travel insurance</li>
+<li>Personal hiking gear</li>
+<li>Tips</li>
+<li>Personal expenses</li>
+</ul>
+
+<a class="enquire"
+href="https://wa.me/255678609977?text=Hello%20Geopron%2C%20I%20am%20interested%20in%20the%207-Day%20Machame%20Route."
+target="_blank">
+Enquire About This Trek
+</a>
+
+</details>
+
+</div>
 </div>
 </div>
 
+
+<!-- LEMOSHO 8 -->
 
 <div class="card">
+
 <img class="card-img"
-src="https://images.unsplash.com/photo-1590523741831-ab7e8b8d7f65?auto=format&fit=crop&w=900&q=80">
+src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1000&q=85">
+
 <div class="card-content">
-<h3>🏝️ Zanzibar</h3>
+
+<span class="days">8 DAYS</span>
+
+<h3>Lemosho Route – 8 Days</h3>
+
 <p>
-Combine your adventure with tropical beaches, island experiences,
-Stone Town and the unique culture of Zanzibar.
+A beautiful long-route Kilimanjaro adventure with excellent acclimatization,
+remote scenery and a gradual approach to the summit.
 </p>
-<a class="small-btn" href="#booking">Plan Zanzibar →</a>
+
+<div class="details">
+
+<details>
+
+<summary>View Full Itinerary & Details</summary>
+
+<h4>Overview</h4>
+
+<p>
+Lemosho is one of Kilimanjaro's most scenic approaches. The route begins on the
+western side of the mountain and crosses the Shira Plateau before joining the
+southern circuit toward the summit.
+</p>
+
+<h4>Highlights</h4>
+
+<ul>
+<li>Remote western approach</li>
+<li>Shira Plateau</li>
+<li>Lava Tower</li>
+<li>Barranco Wall</li>
+<li>Karanga Valley</li>
+<li>Barafu Camp</li>
+<li>Uhuru Peak</li>
+</ul>
+
+<h4>Day 1 – Londorossi Gate to Forest Camp</h4>
+<p>
+Registration followed by a trek through the forest toward the first mountain camp.
+</p>
+
+<h4>Day 2 – Forest Camp to Shira 1 Camp</h4>
+<p>
+Continue upward through the forest and emerge onto the Shira Plateau.
+</p>
+
+<h4>Day 3 – Shira 1 to Shira 2</h4>
+<p>
+Explore the high-altitude plateau while continuing the acclimatization process.
+</p>
+
+<h4>Day 4 – Shira 2 to Lava Tower to Barranco Camp</h4>
+<p>
+Climb toward Lava Tower and descend to Barranco Valley for the night.
+</p>
+
+<h4>Day 5 – Barranco to Karanga Camp</h4>
+<p>
+Climb the Barranco Wall and continue toward Karanga Valley.
+</p>
+
+<h4>Day 6 – Karanga to Barafu Camp</h4>
+<p>
+Continue toward Barafu Camp, preparing for the summit attempt.
+</p>
+
+<h4>Day 7 – Barafu to Uhuru Peak to Mweka Camp</h4>
+<p>
+Summit attempt during the night, reach Uhuru Peak and descend toward Mweka Camp.
+</p>
+
+<h4>Day 8 – Mweka Camp to Mweka Gate</h4>
+<p>
+Descend through the rainforest and transfer back to Moshi.
+</p>
+
+<h4>What's Included</h4>
+<ul>
+<li>Professional mountain guide</li>
+<li>Mountain crew</li>
+<li>Park fees</li>
+<li>Camping accommodation</li>
+<li>Meals</li>
+<li>Emergency oxygen</li>
+<li>Rescue arrangements</li>
+<li>Transfers as specified</li>
+</ul>
+
+<h4>What's Not Included</h4>
+<ul>
+<li>International flights</li>
+<li>Visa</li>
+<li>Travel insurance</li>
+<li>Personal equipment</li>
+<li>Tips</li>
+<li>Personal expenses</li>
+</ul>
+
+<a class="enquire"
+href="https://wa.me/255678609977?text=Hello%20Geopron%2C%20I%20am%20interested%20in%20the%208-Day%20Lemosho%20Route."
+target="_blank">
+Enquire About This Trek
+</a>
+
+</details>
+
+</div>
 </div>
 </div>
 
+
+<!-- NORTHERN CIRCUIT -->
 
 <div class="card">
+
 <img class="card-img"
-src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=900&q=80">
+src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=85">
+
 <div class="card-content">
-<h3>☕ Cultural Experiences</h3>
+
+<span class="days">9 DAYS</span>
+
+<h3>Northern Circuit – 9 Days</h3>
+
 <p>
-Meet local communities, discover Chagga traditions, visit coffee farms
-and experience authentic Tanzanian culture.
+A longer and quieter route around Kilimanjaro offering spectacular scenery
+and extensive acclimatization before the summit.
 </p>
-<a class="small-btn" href="#booking">Explore Culture →</a>
+
+<div class="details">
+
+<details>
+
+<summary>View Full Itinerary & Details</summary>
+
+<h4>Overview</h4>
+
+<p>
+The Northern Circuit is the longest main trekking route on Kilimanjaro.
+It travels around the quieter northern side of the mountain before joining
+the summit approach.
+</p>
+
+<h4>Highlights</h4>
+
+<ul>
+<li>Remote northern slopes</li>
+<li>Shira Plateau</li>
+<li>Moir Hut area</li>
+<li>Pofu and Third Cave areas</li>
+<li>Kibo summit zone</li>
+<li>Uhuru Peak</li>
+</ul>
+
+<h4>Day 1 – Londorossi Gate to Mti Mkubwa</h4>
+<p>
+Registration and trek through the rainforest to Mti Mkubwa Camp.
+</p>
+
+<h4>Day 2 – Mti Mkubwa to Shira Camp</h4>
+<p>
+Continue through the forest toward the open landscapes of the Shira Plateau.
+</p>
+
+<h4>Day 3 – Shira Camp to Moir Hut</h4>
+<p>
+Cross the plateau and continue toward the Moir area.
+</p>
+
+<h4>Day 4 – Moir Hut to Pofu Camp</h4>
+<p>
+Trek through the northern slopes while acclimatizing to increasing altitude.
+</p>
+
+<h4>Day 5 – Pofu Camp to Third Cave Camp</h4>
+<p>
+Continue around the northern circuit toward Third Cave.
+</p>
+
+<h4>Day 6 – Third Cave to School Hut</h4>
+<p>
+Continue toward the eastern summit approach and School Hut.
+</p>
+
+<h4>Day 7 – School Hut to Uhuru Peak to Horombo</h4>
+<p>
+Summit attempt followed by descent toward Horombo.
+</p>
+
+<h4>Day 8 – Horombo to Mandara</h4>
+<p>
+Descend through the moorland toward Mandara Hut.
+</p>
+
+<h4>Day 9 – Mandara to Marangu Gate</h4>
+<p>
+Complete the descent through the rainforest and transfer to Moshi.
+</p>
+
+<h4>What's Included</h4>
+<ul>
+<li>Professional mountain guide</li>
+<li>Mountain crew</li>
+<li>Park fees</li>
+<li>Camping/mountain accommodation</li>
+<li>Meals</li>
+<li>Emergency oxygen</li>
+<li>Rescue arrangements</li>
+<li>Transfers as specified</li>
+</ul>
+
+<h4>What's Not Included</h4>
+<ul>
+<li>International flights</li>
+<li>Visa</li>
+<li>Travel insurance</li>
+<li>Personal hiking equipment</li>
+<li>Tips</li>
+<li>Personal expenses</li>
+</ul>
+
+<a class="enquire"
+href="https://wa.me/255678609977?text=Hello%20Geopron%2C%20I%20am%20interested%20in%20the%209-Day%20Northern%20Circuit."
+target="_blank">
+Enquire About This Trek
+</a>
+
+</details>
+
+</div>
 </div>
 </div>
 
+
+<!-- MACHAME 6 -->
+
+<div class="card">
+
+<img class="card-img"
+src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1000&q=85">
+
+<div class="card-content">
+
+<span class="days">6 DAYS</span>
+
+<h3>Machame Route – 6 Days</h3>
+
+<p>
+A classic scenic Kilimanjaro route through rainforest, Shira Plateau,
+Barranco and the southern summit circuit.
+</p>
+
+<div class="details">
+
+<details>
+
+<summary>View Full Itinerary & Details</summary>
+
+<h4>Day 1 – Machame Gate to Machame Camp</h4>
+<p>Begin through the rainforest toward Machame Camp.</p>
+
+<h4>Day 2 – Machame Camp to Shira Camp</h4>
+<p>Climb toward the Shira Plateau.</p>
+
+<h4>Day 3 – Shira to Lava Tower to Barranco</h4>
+<p>Acclimatization at higher elevation followed by descent to Barranco.</p>
+
+<h4>Day 4 – Barranco to Karanga to Barafu</h4>
+<p>Climb Barranco Wall and continue toward Barafu Camp.</p>
+
+<h4>Day 5 – Barafu to Uhuru Peak to Mweka</h4>
+<p>Summit attempt followed by descent to Mweka Camp.</p>
+
+<h4>Day 6 – Mweka Camp to Mweka Gate</h4>
+<p>Final descent and transfer to Moshi.</p>
+
+<h4>What's Included</h4>
+<ul>
+<li>Professional guide</li>
+<li>Mountain crew</li>
+<li>Park fees</li>
+<li>Camping</li>
+<li>Meals</li>
+<li>Emergency oxygen</li>
+<li>Rescue arrangements</li>
+</ul>
+
+<h4>What's Not Included</h4>
+<ul>
+<li>Flights</li>
+<li>Visa</li>
+<li>Insurance</li>
+<li>Personal equipment</li>
+<li>Tips</li>
+<li>Personal expenses</li>
+</ul>
+
+<a class="enquire"
+href="https://wa.me/255678609977?text=Hello%20Geopron%2C%20I%20am%20interested%20in%20the%206-Day%20Machame%20Route."
+target="_blank">
+Enquire About This Trek
+</a>
+
+</details>
+
+</div>
+</div>
+</div>
+
+
+<!-- LEMOSHO 7 -->
+
+<div class="card">
+
+<img class="card-img"
+src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=1000&q=85">
+
+<div class="card-content">
+
+<span class="days">7 DAYS</span>
+
+<h3>Lemosho Route – 7 Days</h3>
+
+<p>
+A scenic western approach to Kilimanjaro with beautiful landscapes and
+a carefully designed acclimatization schedule.
+</p>
+
+<div class="details">
+
+<details>
+
+<summary>View Full Itinerary & Details</summary>
+
+<h4>Day 1 – Londorossi Gate to Forest Camp</h4>
+<p>Enter Kilimanjaro National Park and trek through the rainforest.</p>
+
+<h4>Day 2 – Forest Camp to Shira Camp</h4>
+<p>Continue toward the Shira Plateau.</p>
+
+<h4>Day 3 – Shira Camp to Lava Tower to Barranco</h4>
+<p>Climb higher for acclimatization before descending to Barranco.</p>
+
+<h4>Day 4 – Barranco to Karanga</h4>
+<p>Climb Barranco Wall and continue toward Karanga Valley.</p>
+
+<h4>Day 5 – Karanga to Barafu</h4>
+<p>Continue toward the summit base camp.</p>
+
+<h4>Day 6 – Barafu to Uhuru Peak to Mweka</h4>
+<p>Summit Uhuru Peak and descend toward Mweka.</p>
+
+<h4>Day 7 – Mweka to Mweka Gate</h4>
+<p>Complete the descent and transfer back to Moshi.</p>
+
+<h4>What's Included</h4>
+<ul>
+<li>Professional mountain guide</li>
+<li>Mountain crew</li>
+<li>Park fees</li>
+<li>Camping accommodation</li>
+<li>Meals</li>
+<li>Emergency oxygen</li>
+<li>Rescue arrangements</li>
+</ul>
+
+<h4>What's Not Included</h4>
+<ul>
+<li>International flights</li>
+<li>Visa</li>
+<li>Travel insurance</li>
+<li>Personal hiking equipment</li>
+<li>Tips</li>
+<li>Personal expenses</li>
+</ul>
+
+<a class="enquire"
+href="https://wa.me/255678609977?text=Hello%20Geopron%2C%20I%20am%20interested%20in%20the%207-Day%20Lemosho%20Route."
+target="_blank">
+Enquire About This Trek
+</a>
+
+</details>
+
+</div>
+</div>
+</div>
+
+
+<!-- UMBWE -->
+
+<div class="card">
+
+<img class="card-img"
+src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1000&q=85">
+
+<div class="card-content">
+
+<span class="days">CUSTOM ITINERARY</span>
+
+<h3>Umbwe Route</h3>
+
+<p>
+A demanding and spectacular route for experienced trekkers seeking a more direct
+and challenging approach to the southern circuit.
+</p>
+
+<div class="details">
+
+<details>
+
+<summary>View Route Details</summary>
+
+<h4>Overview</h4>
+
+<p>
+The Umbwe Route is steep and direct. It is generally suited to experienced hikers
+and is often combined with the southern circuit before approaching the summit.
+</p>
+
+<h4>Highlights</h4>
+
+<ul>
+<li>Umbwe rainforest</li>
+<li>Steep mountain ridges</li>
+<li>Barranco Valley</li>
+<li>Lava Tower area</li>
+<li>Southern Circuit</li>
+<li>Uhuru Peak</li>
+</ul>
+
+<h4>Typical Route</h4>
+
+<p>
+Umbwe Gate → Umbwe Camp → Barranco → Karanga → Barafu →
+Uhuru Peak → Mweka.
+</p>
+
+<h4>What's Included</h4>
+
+<ul>
+<li>Professional mountain guide</li>
+<li>Mountain crew</li>
+<li>Park fees</li>
+<li>Mountain accommodation</li>
+<li>Meals</li>
+<li>Emergency oxygen</li>
+<li>Rescue arrangements</li>
+</ul>
+
+<h4>What's Not Included</h4>
+
+<ul>
+<li>Flights</li>
+<li>Visa</li>
+<li>Travel insurance</li>
+<li>Personal equipment</li>
+<li>Tips</li>
+<li>Personal expenses</li>
+</ul>
+
+<a class="enquire"
+href="https://wa.me/255678609977?text=Hello%20Geopron%2C%20I%20would%20like%20information%20about%20the%20Umbwe%20Route."
+target="_blank">
+Enquire About Umbwe
+</a>
+
+</details>
+
+</div>
+</div>
+</div>
+
+
+<!-- MERU -->
+
+<div class="card">
+
+<img class="card-img"
+src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1000&q=85">
+
+<div class="card-content">
+
+<span class="days">MOUNT MERU</span>
+
+<h3>Mount Meru Trek</h3>
+
+<p>
+A spectacular mountain adventure near Arusha offering beautiful forest,
+wildlife surroundings and dramatic views toward Kilimanjaro.
+</p>
+
+<div class="details">
+
+<details>
+
+<summary>View Full Itinerary & Details</summary>
+
+<h4>Overview</h4>
+
+<p>
+Mount Meru is Tanzania's second-highest mountain and an excellent trekking
+experience in its own right. The mountain lies within Arusha National Park.
+</p>
+
+<h4>Highlights</h4>
+
+<ul>
+<li>Arusha National Park</li>
+<li>Montane forest</li>
+<li>Wildlife surroundings</li>
+<li>Momella Gate</li>
+<li>Saddle area</li>
+<li>Socialist Peak</li>
+<li>Views toward Kilimanjaro</li>
+</ul>
+
+<h4>Typical Itinerary</h4>
+
+<p>
+Day 1 – Momella Gate to Miriakamba Hut.
+</p>
+
+<p>
+Day 2 – Miriakamba to Saddle Hut.
+</p>
+
+<p>
+Day 3 – Summit Socialist Peak and descend.
+</p>
+
+<p>
+Day 4 – Complete descent to Momella Gate and transfer.
+</p>
+
+<h4>What's Included</h4>
+
+<ul>
+<li>Professional mountain guide</li>
+<li>Park fees</li>
+<li>Mountain accommodation</li>
+<li>Meals during the trek</li>
+<li>Mountain crew support</li>
+<li>Transfers as specified</li>
+</ul>
+
+<h4>What's Not Included</h4>
+
+<ul>
+<li>International flights</li>
+<li>Visa</li>
+<li>Travel insurance</li>
+<li>Personal equipment</li>
+<li>Tips</li>
+<li>Personal expenses</li>
+</ul>
+
+<a class="enquire"
+href="https://wa.me/255678609977?text=Hello%20Geopron%2C%20I%20would%20like%20information%20about%20Mount%20Meru."
+target="_blank">
+Enquire About Mount Meru
+</a>
+
+</details>
+
+</div>
+</div>
+</div>
+
+</div>
 </div>
 </section>
 
@@ -509,21 +1315,24 @@ and experience authentic Tanzanian culture.
 <div class="container about-grid">
 
 <div>
+
 <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85">
+
 </div>
 
 <div>
+
 <h2>Your Tanzania. Your Story.</h2>
 
 <p>
-Geopron Travel Adventures is a Tanzania-based tour company offering
-authentic African experiences from the mountains of Kilimanjaro to the
-wildlife-rich national parks and the tropical islands of Zanzibar.
+Geopron Travel Adventures is a Tanzania-based tour company offering authentic
+African experiences from the mountains of Kilimanjaro to the wildlife-rich
+national parks and the tropical islands of Zanzibar.
 </p>
 
 <p style="margin-top:15px;">
-We create personalized trips for travelers looking for adventure,
-wildlife, culture, relaxation and unforgettable memories.
+We create personalized trips for travelers looking for adventure, wildlife,
+culture, relaxation and unforgettable memories.
 </p>
 
 <div class="check"><span>✓</span> Local Tanzanian experience</div>
@@ -531,7 +1340,9 @@ wildlife, culture, relaxation and unforgettable memories.
 <div class="check"><span>✓</span> Professional guides and trusted partners</div>
 <div class="check"><span>✓</span> Mountain, safari, culture & beach experiences</div>
 
-<a class="btn btn-primary" href="#booking">Start Planning</a>
+<a class="btn btn-primary" href="#booking">
+Start Planning
+</a>
 
 </div>
 </div>
@@ -541,8 +1352,13 @@ wildlife, culture, relaxation and unforgettable memories.
 <section>
 
 <div class="section-title">
+
 <h2>Why Travel With Geopron?</h2>
-<p>We focus on creating experiences that feel personal, authentic and memorable.</p>
+
+<p>
+We focus on creating experiences that feel personal, authentic and memorable.
+</p>
+
 </div>
 
 <div class="container features">
@@ -556,7 +1372,7 @@ wildlife, culture, relaxation and unforgettable memories.
 <div class="feature">
 <div class="icon">🧭</div>
 <h3>Tailor-Made Trips</h3>
-<p>Your journey can be designed around your interests, time and budget.</p>
+<p>Your journey can be designed around your interests, time and travel style.</p>
 </div>
 
 <div class="feature">
@@ -578,10 +1394,15 @@ wildlife, culture, relaxation and unforgettable memories.
 <section class="booking" id="booking">
 
 <div class="section-title">
-<h2 style="color:white;">Plan Your Tanzania Adventure</h2>
+
+<h2 style="color:white;">
+Plan Your Tanzania Adventure
+</h2>
+
 <p style="color:#ddd;">
 Tell us what you are dreaming about and we will help you create your journey.
 </p>
+
 </div>
 
 <div class="booking-box">
@@ -616,8 +1437,11 @@ Tell us what you are dreaming about and we will help you create your journey.
 </div>
 
 <div>
+
 <label>Experience</label>
+
 <select id="experience">
+
 <option>Kilimanjaro Trekking</option>
 <option>Wildlife Safari</option>
 <option>Zanzibar Beach Holiday</option>
@@ -626,12 +1450,18 @@ Tell us what you are dreaming about and we will help you create your journey.
 <option>Safari + Zanzibar</option>
 <option>Kilimanjaro + Safari</option>
 <option>Custom Tanzania Adventure</option>
+
 </select>
+
 </div>
 
 <div class="form-full">
+
 <label>Tell us about your trip</label>
-<textarea id="message" placeholder="Routes, parks, number of days, accommodation preference, budget or anything else you would like us to know..."></textarea>
+
+<textarea id="message"
+placeholder="Tell us about your preferred route, number of days, accommodation preference and anything else you would like us to know..."></textarea>
+
 </div>
 
 </div>
@@ -649,32 +1479,51 @@ Send Booking Request via WhatsApp
 <section id="contact" class="contact">
 
 <div class="section-title">
+
 <h2>Let's Start Planning</h2>
-<p>Contact Geopron Travel Adventures from anywhere in the world.</p>
+
+<p>
+Contact Geopron Travel Adventures from anywhere in the world.
+</p>
+
 </div>
 
 <div class="container contact-grid">
 
 <div class="contact-item">
+
 <h3>📱 WhatsApp</h3>
-<a href="https://wa.me/255678609977">+255 678 609 977</a>
+
+<a href="https://wa.me/255678609977" target="_blank">
++255 678 609 977
+</a>
+
 </div>
 
 <div class="contact-item">
+
 <h3>📧 Email</h3>
+
 <a href="mailto:geoprontravel@gmail.com">
 geoprontravel@gmail.com
 </a>
+
 </div>
 
 <div class="contact-item">
+
 <h3>📍 Location</h3>
+
 <p>Moshi, Tanzania</p>
+
 </div>
 
 <div class="contact-item">
-<h3>🌍 Destination</h3>
+
+<h3>🌍 Destinations</h3>
+
 <p>Tanzania & Zanzibar</p>
+
 </div>
 
 </div>
@@ -683,21 +1532,27 @@ geoprontravel@gmail.com
 
 <footer>
 
-<div class="logo">GEOPRON <span>TRAVEL ADVENTURES</span></div>
+<div class="logo">
+GEOPRON <span>TRAVEL ADVENTURES</span>
+</div>
 
 <p>
 Discover Tanzania. Experience Africa. Create Memories for a Lifetime.
 </p>
 
 <div class="footer-links">
+
 <a href="#home">Home</a>
-<a href="#experiences">Tours</a>
+<a href="#tours">Tours</a>
 <a href="#about">About</a>
 <a href="#booking">Book</a>
 <a href="#contact">Contact</a>
+
 </div>
 
-<p>© 2026 Geopron Travel Adventures. All Rights Reserved.</p>
+<p>
+© 2026 Geopron Travel Adventures. All Rights Reserved.
+</p>
 
 </footer>
 
@@ -715,26 +1570,29 @@ function sendBooking(event){
 
 event.preventDefault();
 
-const name = document.getElementById("name").value;
-const email = document.getElementById("email").value;
-const phone = document.getElementById("phone").value;
-const travelers = document.getElementById("travelers").value;
-const date = document.getElementById("date").value;
-const experience = document.getElementById("experience").value;
-const message = document.getElementById("message").value;
+const name=document.getElementById("name").value;
+const email=document.getElementById("email").value;
+const phone=document.getElementById("phone").value;
+const travelers=document.getElementById("travelers").value;
+const date=document.getElementById("date").value;
+const experience=document.getElementById("experience").value;
+const message=document.getElementById("message").value;
 
-const text =
-"Hello Geopron Travel Adventures!%0A%0A" +
-"I would like to plan a Tanzania adventure.%0A%0A" +
-"Name: " + encodeURIComponent(name) + "%0A" +
-"Email: " + encodeURIComponent(email) + "%0A" +
-"Phone/WhatsApp: " + encodeURIComponent(phone) + "%0A" +
-"Travelers: " + encodeURIComponent(travelers) + "%0A" +
-"Travel Date: " + encodeURIComponent(date) + "%0A" +
-"Experience: " + encodeURIComponent(experience) + "%0A" +
-"Trip Details: " + encodeURIComponent(message);
+const text=
+"Hello Geopron Travel Adventures!%0A%0A"+
+"I would like to plan a Tanzania adventure.%0A%0A"+
+"Name: "+encodeURIComponent(name)+"%0A"+
+"Email: "+encodeURIComponent(email)+"%0A"+
+"Phone/WhatsApp: "+encodeURIComponent(phone)+"%0A"+
+"Travelers: "+encodeURIComponent(travelers)+"%0A"+
+"Travel Date: "+encodeURIComponent(date)+"%0A"+
+"Experience: "+encodeURIComponent(experience)+"%0A"+
+"Trip Details: "+encodeURIComponent(message);
 
-window.open("https://wa.me/255678609977?text=" + text, "_blank");
+window.open(
+"https://wa.me/255678609977?text="+text,
+"_blank"
+);
 
 }
 
